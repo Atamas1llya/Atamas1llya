@@ -1,1 +1,600 @@
-!function(e){function t(i){if(n[i])return n[i].exports;var r=n[i]={i:i,l:!1,exports:{}};return e[i].call(r.exports,r,r.exports,t),r.l=!0,r.exports}var n={};t.m=e,t.c=n,t.i=function(e){return e},t.d=function(e,n,i){t.o(e,n)||Object.defineProperty(e,n,{configurable:!1,enumerable:!0,get:i})},t.n=function(e){var n=e&&e.__esModule?function(){return e.default}:function(){return e};return t.d(n,"a",n),n},t.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},t.p="",t(t.s=4)}([function(e,t,n){t=e.exports=n(2)(void 0),t.push([e.i,"header{width:100%;height:200px;background:#212121}#greeting{padding:30px 0;flex-direction:column}#greeting,#greeting #avatar{display:flex;align-items:center;justify-content:center}#greeting #avatar{width:250px;height:250px;border-radius:50%;overflow:hidden;margin-top:-150px;transition:.3s}#greeting #avatar img{width:100%;height:100%}#greeting #avatar:hover{transform:scale(1.01);transition:.1s}#greeting #name h1{font-size:40px;letter-spacing:.8px;font-family:Exo\\ 2,sans-serif}#greeting #introduction figcaption{max-width:800px;font-size:20px}#info{height:auto}#info,#info #credentials{display:flex;align-items:center;justify-content:center;flex-direction:column}#info #credentials{max-width:800px;margin:50px 0;font-family:Exo\\ 2,sans-serif;font-size:18px}#info #credentials span{width:90vw;display:flex;align-items:center;justify-content:space-between}#info #credentials span p{margin:20px}#info #credentials span p:nth-child(2){font-weight:700;letter-spacing:.8px;text-align:right}#info #credentials span:hover{background:rgba(0,0,0,.05)}#skills #know,#skills #use{padding:10px 5vw}#skills #know h4,#skills #use h4{font-size:23px;margin:0 50px;letter-spacing:1px;font-weight:lighter}#skills #know .subjects,#skills #use .subjects{display:flex;align-items:center;justify-content:flex-start;flex-direction:row;flex-wrap:wrap}#skills #know .subjects .subject,#skills #use .subjects .subject{flex:1;min-width:300px;max-width:90vw;height:auto;margin:1vw;background:#212121;border-radius:3px;color:#fff;transition:.3s;overflow:hidden}#skills #know .subjects .subject .subject-image,#skills #use .subjects .subject .subject-image{margin:0;width:100%;max-height:240px;height:auto;border-radius:0;display:flex;align-items:center;justify-content:center;overflow:hidden}#skills #know .subjects .subject .subject-image img,#skills #use .subjects .subject .subject-image img{width:100%;height:auto}#skills #know .subjects .subject .subject-description,#skills #use .subjects .subject .subject-description{width:auto;height:auto;min-height:30px;margin:0;padding:10px;display:flex;justify-content:space-between;flex-direction:column}#skills #know .subjects .subject .subject-description h5,#skills #use .subjects .subject .subject-description h5{font-size:20px;font-weight:100;margin:10px;letter-spacing:.9px;font-family:Exo\\ 2,sans-serif;text-align:center}#skills #know .subjects .subject .subject-description h6,#skills #use .subjects .subject .subject-description h6{margin:10px;text-align:center;font-weight:lighter;letter-spacing:1px;font-size:13px}#skills #know .subjects .subject .subject-description .level,#skills #use .subjects .subject .subject-description .level{text-align:center;margin:10px}#skills #know .subjects .subject:hover,#skills #use .subjects .subject:hover{transform:scale(1.01);transition:.2s}#experience{display:flex;flex-direction:column;align-items:center}#experience .job-block{width:90%;margin:25px 0}#experience .job-block header{display:flex;justify-content:space-between;flex-direction:row;height:auto}#experience .job-block header p{font-size:20px}#experience .job-block header p:first-child{font-weight:500}#experience .job-block main{display:flex;justify-content:space-between;align-items:center;flex-direction:row;height:auto}#experience .job-block main h4{font-size:20px}#experience .job-block main ul li{font-size:18px;margin:8px 0}#links #links-body{padding:10px 50px 40px;height:auto;display:flex;flex-direction:row;flex-wrap:wrap}#links #links-body .link-block{flex:1;min-width:40%;margin:10px 0;padding:10px 30px;border-left:5px solid #212121;line-height:20px}#links #links-body .link-block h4{font-size:22px;font-weight:100;letter-spacing:.8px;margin:10px 0}#links #links-body .link-block a{color:rgba(0,0,0,.7);font-size:15px;margin:10px 0}::-webkit-scrollbar{background:#212121;width:5px}::-webkit-scrollbar-thumb{background:#f5f5f5}::-webkit-scrollbar-thumb:hover{border-radius:2px;transition:1s}html{margin:0;padding:0}body{background:#f5f5f5;font-family:Roboto,sans-serif}blockquote{padding:10px 35px;border-left:5.5px solid #212121;line-height:35px;margin:30px 0}main>article:nth-child(2n){background:#212121;color:#fff}a{color:inherit;text-decoration:inherit}a:hover{text-decoration:underline}.anchor{width:100%;height:90px;margin:10px 0;justify-content:space-between}.anchor,.anchor a{display:flex;align-items:center}.anchor a{margin:0 0 0 5vw;font-size:30px;font-family:Exo\\ 2,sans-serif;letter-spacing:.8px}.anchor a i{margin:0 1vw;font-size:30px}.anchor p{font-size:25px;margin:0 5vw 0 0}",""])},function(e,t,n){function i(e,t){for(var n=0;n<e.length;n++){var i=e[n],r=h[i.id];if(r){r.refs++;for(var o=0;o<r.parts.length;o++)r.parts[o](i.parts[o]);for(;o<i.parts.length;o++)r.parts.push(u(i.parts[o],t))}else{for(var s=[],o=0;o<i.parts.length;o++)s.push(u(i.parts[o],t));h[i.id]={id:i.id,refs:1,parts:s}}}}function r(e,t){for(var n=[],i={},r=0;r<e.length;r++){var o=e[r],s=t.base?o[0]+t.base:o[0],a=o[1],c=o[2],l=o[3],u={css:a,media:c,sourceMap:l};i[s]?i[s].parts.push(u):n.push(i[s]={id:s,parts:[u]})}return n}function o(e,t){var n=g(e.insertInto);if(!n)throw new Error("Couldn't find a style target. This probably means that the value for the 'insertInto' parameter is invalid.");var i=v[v.length-1];if("top"===e.insertAt)i?i.nextSibling?n.insertBefore(t,i.nextSibling):n.appendChild(t):n.insertBefore(t,n.firstChild),v.push(t);else{if("bottom"!==e.insertAt)throw new Error("Invalid value for parameter 'insertAt'. Must be 'top' or 'bottom'.");n.appendChild(t)}}function s(e){e.parentNode.removeChild(e);var t=v.indexOf(e);t>=0&&v.splice(t,1)}function a(e){var t=document.createElement("style");return e.attrs.type="text/css",l(t,e.attrs),o(e,t),t}function c(e){var t=document.createElement("link");return e.attrs.type="text/css",e.attrs.rel="stylesheet",l(t,e.attrs),o(e,t),t}function l(e,t){Object.keys(t).forEach(function(n){e.setAttribute(n,t[n])})}function u(e,t){var n,i,r,o;if(t.transform&&e.css){if(!(o=t.transform(e.css)))return function(){};e.css=o}if(t.singleton){var l=m++;n=x||(x=a(t)),i=f.bind(null,n,l,!1),r=f.bind(null,n,l,!0)}else e.sourceMap&&"function"==typeof URL&&"function"==typeof URL.createObjectURL&&"function"==typeof URL.revokeObjectURL&&"function"==typeof Blob&&"function"==typeof btoa?(n=c(t),i=d.bind(null,n,t),r=function(){s(n),n.href&&URL.revokeObjectURL(n.href)}):(n=a(t),i=p.bind(null,n),r=function(){s(n)});return i(e),function(t){if(t){if(t.css===e.css&&t.media===e.media&&t.sourceMap===e.sourceMap)return;i(e=t)}else r()}}function f(e,t,n,i){var r=n?"":i.css;if(e.styleSheet)e.styleSheet.cssText=j(t,r);else{var o=document.createTextNode(r),s=e.childNodes;s[t]&&e.removeChild(s[t]),s.length?e.insertBefore(o,s[t]):e.appendChild(o)}}function p(e,t){var n=t.css,i=t.media;if(i&&e.setAttribute("media",i),e.styleSheet)e.styleSheet.cssText=n;else{for(;e.firstChild;)e.removeChild(e.firstChild);e.appendChild(document.createTextNode(n))}}function d(e,t,n){var i=n.css,r=n.sourceMap,o=void 0===t.convertToAbsoluteUrls&&r;(t.convertToAbsoluteUrls||o)&&(i=w(i)),r&&(i+="\n/*# sourceMappingURL=data:application/json;base64,"+btoa(unescape(encodeURIComponent(JSON.stringify(r))))+" */");var s=new Blob([i],{type:"text/css"}),a=e.href;e.href=URL.createObjectURL(s),a&&URL.revokeObjectURL(a)}var h={},b=function(e){var t;return function(){return void 0===t&&(t=e.apply(this,arguments)),t}}(function(){return window&&document&&document.all&&!window.atob}),g=function(e){var t={};return function(n){return void 0===t[n]&&(t[n]=e.call(this,n)),t[n]}}(function(e){return document.querySelector(e)}),x=null,m=0,v=[],w=n(3);e.exports=function(e,t){if("undefined"!=typeof DEBUG&&DEBUG&&"object"!=typeof document)throw new Error("The style-loader cannot be used in a non-browser environment");t=t||{},t.attrs="object"==typeof t.attrs?t.attrs:{},void 0===t.singleton&&(t.singleton=b()),void 0===t.insertInto&&(t.insertInto="head"),void 0===t.insertAt&&(t.insertAt="bottom");var n=r(e,t);return i(n,t),function(e){for(var o=[],s=0;s<n.length;s++){var a=n[s],c=h[a.id];c.refs--,o.push(c)}if(e){i(r(e,t),t)}for(var s=0;s<o.length;s++){var c=o[s];if(0===c.refs){for(var l=0;l<c.parts.length;l++)c.parts[l]();delete h[c.id]}}}};var j=function(){var e=[];return function(t,n){return e[t]=n,e.filter(Boolean).join("\n")}}()},function(e,t){function n(e,t){var n=e[1]||"",r=e[3];if(!r)return n;if(t&&"function"==typeof btoa){var o=i(r);return[n].concat(r.sources.map(function(e){return"/*# sourceURL="+r.sourceRoot+e+" */"})).concat([o]).join("\n")}return[n].join("\n")}function i(e){return"/*# sourceMappingURL=data:application/json;charset=utf-8;base64,"+btoa(unescape(encodeURIComponent(JSON.stringify(e))))+" */"}e.exports=function(e){var t=[];return t.toString=function(){return this.map(function(t){var i=n(t,e);return t[2]?"@media "+t[2]+"{"+i+"}":i}).join("")},t.i=function(e,n){"string"==typeof e&&(e=[[null,e,""]]);for(var i={},r=0;r<this.length;r++){var o=this[r][0];"number"==typeof o&&(i[o]=!0)}for(r=0;r<e.length;r++){var s=e[r];"number"==typeof s[0]&&i[s[0]]||(n&&!s[2]?s[2]=n:n&&(s[2]="("+s[2]+") and ("+n+")"),t.push(s))}},t}},function(e,t){e.exports=function(e){var t="undefined"!=typeof window&&window.location;if(!t)throw new Error("fixUrls requires window.location");if(!e||"string"!=typeof e)return e;var n=t.protocol+"//"+t.host,i=n+t.pathname.replace(/\/[^\/]*$/,"/");return e.replace(/url\s*\(((?:[^)(]|\((?:[^)(]+|\([^)(]*\))*\))*)\)/gi,function(e,t){var r=t.trim().replace(/^"(.*)"$/,function(e,t){return t}).replace(/^'(.*)'$/,function(e,t){return t});if(/^(#|data:|http:\/\/|https:\/\/|file:\/\/\/)/i.test(r))return e;var o;return o=0===r.indexOf("//")?r:0===r.indexOf("/")?n+r:i+r.replace(/^\.\//,""),"url("+JSON.stringify(o)+")"})}},function(e,t,n){var i=n(0);"string"==typeof i&&(i=[[e.i,i,""]]);var r={};r.transform=void 0;n(1)(i,r);i.locals&&(e.exports=i.locals)}]);
+/******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// identity function for calling harmony imports with the correct context
+/******/ 	__webpack_require__.i = function(value) { return value; };
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, {
+/******/ 				configurable: false,
+/******/ 				enumerable: true,
+/******/ 				get: getter
+/******/ 			});
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ })
+/************************************************************************/
+/******/ ([
+/* 0 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(2)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "header {\n  width: 100%;\n  height: 200px;\n  background: #212121;\n}\n#greeting {\n  padding: 30px 0;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  flex-direction: column;\n}\n#greeting #avatar {\n  width: 250px;\n  height: 250px;\n  border-radius: 50%;\n  overflow: hidden;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  margin-top: -150px;\n  transition: 0.3s;\n}\n#greeting #avatar img {\n  width: 100%;\n  height: 100%;\n}\n#greeting #avatar:hover {\n  transform: scale(1.01);\n  transition: 0.1s;\n}\n#greeting #name h1 {\n  font-size: 40px;\n  letter-spacing: 0.8px;\n  font-family: 'Exo 2', sans-serif;\n}\n#greeting #introduction figcaption {\n  max-width: 800px;\n  font-size: 20px;\n}\n#info {\n  height: auto;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  flex-direction: column;\n}\n#info #credentials {\n  max-width: 800px;\n  margin: 50px 0;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  flex-direction: column;\n  font-family: 'Exo 2', sans-serif;\n  font-size: 18px;\n}\n#info #credentials span {\n  width: 90vw;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n}\n#info #credentials span p {\n  margin: 20px;\n}\n#info #credentials span p:nth-child(2) {\n  font-weight: bold;\n  letter-spacing: 0.8px;\n  text-align: right;\n}\n#info #credentials span:hover {\n  background: rgba(0, 0, 0, 0.05);\n}\n#skills #know,\n#skills #use {\n  padding: 10px 5vw;\n}\n#skills #know h4,\n#skills #use h4 {\n  font-size: 23px;\n  margin: 0 50px;\n  letter-spacing: 1px;\n  font-weight: lighter;\n}\n#skills #know .subjects,\n#skills #use .subjects {\n  display: flex;\n  align-items: center;\n  justify-content: flex-start;\n  flex-direction: row;\n  flex-wrap: wrap;\n}\n#skills #know .subjects .subject,\n#skills #use .subjects .subject {\n  flex: 1;\n  min-width: 300px;\n  max-width: 90vw;\n  height: auto;\n  margin: 1vw;\n  background: #212121;\n  border-radius: 3px;\n  color: white;\n  transition: 0.3s;\n  overflow: hidden;\n}\n#skills #know .subjects .subject .subject-image,\n#skills #use .subjects .subject .subject-image {\n  margin: 0;\n  width: 100%;\n  max-height: 240px;\n  height: auto;\n  border-radius: 0;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  overflow: hidden;\n}\n#skills #know .subjects .subject .subject-image img,\n#skills #use .subjects .subject .subject-image img {\n  width: 100%;\n  height: auto;\n}\n#skills #know .subjects .subject .subject-description,\n#skills #use .subjects .subject .subject-description {\n  width: auto;\n  height: auto;\n  min-height: 30px;\n  margin: 0;\n  padding: 10px;\n  display: flex;\n  justify-content: space-between;\n  flex-direction: column;\n}\n#skills #know .subjects .subject .subject-description h5,\n#skills #use .subjects .subject .subject-description h5 {\n  font-size: 20px;\n  font-weight: 100;\n  margin: 10px;\n  letter-spacing: 0.9px;\n  font-family: 'Exo 2', sans-serif;\n  text-align: center;\n}\n#skills #know .subjects .subject .subject-description h6,\n#skills #use .subjects .subject .subject-description h6 {\n  margin: 10px;\n  text-align: center;\n  font-weight: lighter;\n  letter-spacing: 1px;\n  font-size: 13px;\n}\n#skills #know .subjects .subject .subject-description .level,\n#skills #use .subjects .subject .subject-description .level {\n  text-align: center;\n  margin: 10px;\n}\n#skills #know .subjects .subject:hover,\n#skills #use .subjects .subject:hover {\n  transform: scale(1.01);\n  transition: 0.2s;\n}\n#experience {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n#experience .job-block {\n  width: 90%;\n  margin: 25px 0;\n}\n#experience .job-block header {\n  display: flex;\n  justify-content: space-between;\n  flex-direction: row;\n  flex-wrap: wrap;\n  height: auto;\n}\n#experience .job-block header p {\n  font-size: 20px;\n  margin: 20px 0;\n}\n#experience .job-block header p:nth-child(1) {\n  font-weight: 500;\n  color: rgba(255, 255, 255, 0.8);\n}\n#experience .job-block .divider {\n  height: 1px;\n  background: rgba(255, 255, 255, 0.2);\n}\n#experience .job-block main {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  flex-direction: row;\n  height: auto;\n}\n#experience .job-block main h4 {\n  font-size: 20px;\n  font-weight: 300;\n  color: rgba(255, 255, 255, 0.8);\n}\n#experience .job-block main ul li {\n  max-width: 60vw;\n  line-height: 4vh;\n  width: auto;\n  font-size: 18px;\n  margin: 8px 0;\n}\n#links #links-body {\n  padding: 10px 50px 40px 50px;\n  height: auto;\n  display: flex;\n  flex-direction: row;\n  flex-wrap: wrap;\n}\n#links #links-body .link-block {\n  flex: 1;\n  min-width: 40%;\n  margin: 10px 0;\n  padding: 10px 30px;\n  border-left: 5px solid #212121;\n  line-height: 20px;\n}\n#links #links-body .link-block h4 {\n  font-size: 22px;\n  font-weight: 100;\n  letter-spacing: 0.8px;\n  margin: 10px 0;\n}\n#links #links-body .link-block a {\n  color: rgba(0, 0, 0, 0.7);\n  font-size: 15px;\n  margin: 10px 0;\n}\n::-webkit-scrollbar {\n  background: #212121;\n  width: 5px;\n}\n::-webkit-scrollbar-thumb {\n  background: whitesmoke;\n}\n::-webkit-scrollbar-thumb:hover {\n  border-radius: 2px;\n  transition: 1s;\n}\nhtml {\n  margin: 0;\n  padding: 0;\n}\nbody {\n  background: whitesmoke;\n  font-family: 'Roboto', sans-serif;\n}\nblockquote {\n  padding: 10px 35px;\n  border-left: 5.5px solid #212121;\n  line-height: 35px;\n  margin: 30px 0;\n}\nmain > article:nth-child(even) {\n  background: #212121;\n  color: white;\n}\na {\n  color: inherit;\n  text-decoration: inherit;\n}\na:hover {\n  text-decoration: underline;\n}\n.anchor {\n  width: 100%;\n  height: 90px;\n  margin: 10px 0;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n}\n.anchor a {\n  margin: 0 0 0 5vw;\n  font-size: 30px;\n  font-family: 'Exo 2', sans-serif;\n  letter-spacing: 0.8px;\n  display: flex;\n  align-items: center;\n}\n.anchor a i {\n  margin: 0 1vw;\n  font-size: 30px;\n}\n.anchor p {\n  font-size: 22px;\n  margin: 0 5vw 0 0;\n  font-weight: 200;\n  color: rgba(0, 0, 0, 0.7);\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 1 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/*
+	MIT License http://www.opensource.org/licenses/mit-license.php
+	Author Tobias Koppers @sokra
+*/
+var stylesInDom = {},
+	memoize = function(fn) {
+		var memo;
+		return function () {
+			if (typeof memo === "undefined") memo = fn.apply(this, arguments);
+			return memo;
+		};
+	},
+	isOldIE = memoize(function() {
+		// Test for IE <= 9 as proposed by Browserhacks
+		// @see http://browserhacks.com/#hack-e71d8692f65334173fee715c222cb805
+		// Tests for existence of standard globals is to allow style-loader 
+		// to operate correctly into non-standard environments
+		// @see https://github.com/webpack-contrib/style-loader/issues/177
+		return window && document && document.all && !window.atob;
+	}),
+	getElement = (function(fn) {
+		var memo = {};
+		return function(selector) {
+			if (typeof memo[selector] === "undefined") {
+				memo[selector] = fn.call(this, selector);
+			}
+			return memo[selector]
+		};
+	})(function (styleTarget) {
+		return document.querySelector(styleTarget)
+	}),
+	singletonElement = null,
+	singletonCounter = 0,
+	styleElementsInsertedAtTop = [],
+	fixUrls = __webpack_require__(3);
+
+module.exports = function(list, options) {
+	if(typeof DEBUG !== "undefined" && DEBUG) {
+		if(typeof document !== "object") throw new Error("The style-loader cannot be used in a non-browser environment");
+	}
+
+	options = options || {};
+	options.attrs = typeof options.attrs === "object" ? options.attrs : {};
+
+	// Force single-tag solution on IE6-9, which has a hard limit on the # of <style>
+	// tags it will allow on a page
+	if (typeof options.singleton === "undefined") options.singleton = isOldIE();
+
+	// By default, add <style> tags to the <head> element
+	if (typeof options.insertInto === "undefined") options.insertInto = "head";
+
+	// By default, add <style> tags to the bottom of the target
+	if (typeof options.insertAt === "undefined") options.insertAt = "bottom";
+
+	var styles = listToStyles(list, options);
+	addStylesToDom(styles, options);
+
+	return function update(newList) {
+		var mayRemove = [];
+		for(var i = 0; i < styles.length; i++) {
+			var item = styles[i];
+			var domStyle = stylesInDom[item.id];
+			domStyle.refs--;
+			mayRemove.push(domStyle);
+		}
+		if(newList) {
+			var newStyles = listToStyles(newList, options);
+			addStylesToDom(newStyles, options);
+		}
+		for(var i = 0; i < mayRemove.length; i++) {
+			var domStyle = mayRemove[i];
+			if(domStyle.refs === 0) {
+				for(var j = 0; j < domStyle.parts.length; j++)
+					domStyle.parts[j]();
+				delete stylesInDom[domStyle.id];
+			}
+		}
+	};
+};
+
+function addStylesToDom(styles, options) {
+	for(var i = 0; i < styles.length; i++) {
+		var item = styles[i];
+		var domStyle = stylesInDom[item.id];
+		if(domStyle) {
+			domStyle.refs++;
+			for(var j = 0; j < domStyle.parts.length; j++) {
+				domStyle.parts[j](item.parts[j]);
+			}
+			for(; j < item.parts.length; j++) {
+				domStyle.parts.push(addStyle(item.parts[j], options));
+			}
+		} else {
+			var parts = [];
+			for(var j = 0; j < item.parts.length; j++) {
+				parts.push(addStyle(item.parts[j], options));
+			}
+			stylesInDom[item.id] = {id: item.id, refs: 1, parts: parts};
+		}
+	}
+}
+
+function listToStyles(list, options) {
+	var styles = [];
+	var newStyles = {};
+	for(var i = 0; i < list.length; i++) {
+		var item = list[i];
+		var id = options.base ? item[0] + options.base : item[0];
+		var css = item[1];
+		var media = item[2];
+		var sourceMap = item[3];
+		var part = {css: css, media: media, sourceMap: sourceMap};
+		if(!newStyles[id])
+			styles.push(newStyles[id] = {id: id, parts: [part]});
+		else
+			newStyles[id].parts.push(part);
+	}
+	return styles;
+}
+
+function insertStyleElement(options, styleElement) {
+	var styleTarget = getElement(options.insertInto)
+	if (!styleTarget) {
+		throw new Error("Couldn't find a style target. This probably means that the value for the 'insertInto' parameter is invalid.");
+	}
+	var lastStyleElementInsertedAtTop = styleElementsInsertedAtTop[styleElementsInsertedAtTop.length - 1];
+	if (options.insertAt === "top") {
+		if(!lastStyleElementInsertedAtTop) {
+			styleTarget.insertBefore(styleElement, styleTarget.firstChild);
+		} else if(lastStyleElementInsertedAtTop.nextSibling) {
+			styleTarget.insertBefore(styleElement, lastStyleElementInsertedAtTop.nextSibling);
+		} else {
+			styleTarget.appendChild(styleElement);
+		}
+		styleElementsInsertedAtTop.push(styleElement);
+	} else if (options.insertAt === "bottom") {
+		styleTarget.appendChild(styleElement);
+	} else {
+		throw new Error("Invalid value for parameter 'insertAt'. Must be 'top' or 'bottom'.");
+	}
+}
+
+function removeStyleElement(styleElement) {
+	styleElement.parentNode.removeChild(styleElement);
+	var idx = styleElementsInsertedAtTop.indexOf(styleElement);
+	if(idx >= 0) {
+		styleElementsInsertedAtTop.splice(idx, 1);
+	}
+}
+
+function createStyleElement(options) {
+	var styleElement = document.createElement("style");
+	options.attrs.type = "text/css";
+
+	attachTagAttrs(styleElement, options.attrs);
+	insertStyleElement(options, styleElement);
+	return styleElement;
+}
+
+function createLinkElement(options) {
+	var linkElement = document.createElement("link");
+	options.attrs.type = "text/css";
+	options.attrs.rel = "stylesheet";
+
+	attachTagAttrs(linkElement, options.attrs);
+	insertStyleElement(options, linkElement);
+	return linkElement;
+}
+
+function attachTagAttrs(element, attrs) {
+	Object.keys(attrs).forEach(function (key) {
+		element.setAttribute(key, attrs[key]);
+	});
+}
+
+function addStyle(obj, options) {
+	var styleElement, update, remove, transformResult;
+
+	// If a transform function was defined, run it on the css
+	if (options.transform && obj.css) {
+	    transformResult = options.transform(obj.css);
+	    
+	    if (transformResult) {
+	    	// If transform returns a value, use that instead of the original css.
+	    	// This allows running runtime transformations on the css.
+	    	obj.css = transformResult;
+	    } else {
+	    	// If the transform function returns a falsy value, don't add this css. 
+	    	// This allows conditional loading of css
+	    	return function() {
+	    		// noop
+	    	};
+	    }
+	}
+
+	if (options.singleton) {
+		var styleIndex = singletonCounter++;
+		styleElement = singletonElement || (singletonElement = createStyleElement(options));
+		update = applyToSingletonTag.bind(null, styleElement, styleIndex, false);
+		remove = applyToSingletonTag.bind(null, styleElement, styleIndex, true);
+	} else if(obj.sourceMap &&
+		typeof URL === "function" &&
+		typeof URL.createObjectURL === "function" &&
+		typeof URL.revokeObjectURL === "function" &&
+		typeof Blob === "function" &&
+		typeof btoa === "function") {
+		styleElement = createLinkElement(options);
+		update = updateLink.bind(null, styleElement, options);
+		remove = function() {
+			removeStyleElement(styleElement);
+			if(styleElement.href)
+				URL.revokeObjectURL(styleElement.href);
+		};
+	} else {
+		styleElement = createStyleElement(options);
+		update = applyToTag.bind(null, styleElement);
+		remove = function() {
+			removeStyleElement(styleElement);
+		};
+	}
+
+	update(obj);
+
+	return function updateStyle(newObj) {
+		if(newObj) {
+			if(newObj.css === obj.css && newObj.media === obj.media && newObj.sourceMap === obj.sourceMap)
+				return;
+			update(obj = newObj);
+		} else {
+			remove();
+		}
+	};
+}
+
+var replaceText = (function () {
+	var textStore = [];
+
+	return function (index, replacement) {
+		textStore[index] = replacement;
+		return textStore.filter(Boolean).join('\n');
+	};
+})();
+
+function applyToSingletonTag(styleElement, index, remove, obj) {
+	var css = remove ? "" : obj.css;
+
+	if (styleElement.styleSheet) {
+		styleElement.styleSheet.cssText = replaceText(index, css);
+	} else {
+		var cssNode = document.createTextNode(css);
+		var childNodes = styleElement.childNodes;
+		if (childNodes[index]) styleElement.removeChild(childNodes[index]);
+		if (childNodes.length) {
+			styleElement.insertBefore(cssNode, childNodes[index]);
+		} else {
+			styleElement.appendChild(cssNode);
+		}
+	}
+}
+
+function applyToTag(styleElement, obj) {
+	var css = obj.css;
+	var media = obj.media;
+
+	if(media) {
+		styleElement.setAttribute("media", media)
+	}
+
+	if(styleElement.styleSheet) {
+		styleElement.styleSheet.cssText = css;
+	} else {
+		while(styleElement.firstChild) {
+			styleElement.removeChild(styleElement.firstChild);
+		}
+		styleElement.appendChild(document.createTextNode(css));
+	}
+}
+
+function updateLink(linkElement, options, obj) {
+	var css = obj.css;
+	var sourceMap = obj.sourceMap;
+
+	/* If convertToAbsoluteUrls isn't defined, but sourcemaps are enabled
+	and there is no publicPath defined then lets turn convertToAbsoluteUrls
+	on by default.  Otherwise default to the convertToAbsoluteUrls option
+	directly
+	*/
+	var autoFixUrls = options.convertToAbsoluteUrls === undefined && sourceMap;
+
+	if (options.convertToAbsoluteUrls || autoFixUrls){
+		css = fixUrls(css);
+	}
+
+	if(sourceMap) {
+		// http://stackoverflow.com/a/26603875
+		css += "\n/*# sourceMappingURL=data:application/json;base64," + btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))) + " */";
+	}
+
+	var blob = new Blob([css], { type: "text/css" });
+
+	var oldSrc = linkElement.href;
+
+	linkElement.href = URL.createObjectURL(blob);
+
+	if(oldSrc)
+		URL.revokeObjectURL(oldSrc);
+}
+
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports) {
+
+/*
+	MIT License http://www.opensource.org/licenses/mit-license.php
+	Author Tobias Koppers @sokra
+*/
+// css base code, injected by the css-loader
+module.exports = function (useSourceMap) {
+	var list = [];
+
+	// return the list of modules as css string
+	list.toString = function toString() {
+		return this.map(function (item) {
+			var content = cssWithMappingToString(item, useSourceMap);
+			if (item[2]) {
+				return "@media " + item[2] + "{" + content + "}";
+			} else {
+				return content;
+			}
+		}).join("");
+	};
+
+	// import a list of modules into the list
+	list.i = function (modules, mediaQuery) {
+		if (typeof modules === "string") modules = [[null, modules, ""]];
+		var alreadyImportedModules = {};
+		for (var i = 0; i < this.length; i++) {
+			var id = this[i][0];
+			if (typeof id === "number") alreadyImportedModules[id] = true;
+		}
+		for (i = 0; i < modules.length; i++) {
+			var item = modules[i];
+			// skip already imported module
+			// this implementation is not 100% perfect for weird media query combinations
+			//  when a module is imported multiple times with different media queries.
+			//  I hope this will never occur (Hey this way we have smaller bundles)
+			if (typeof item[0] !== "number" || !alreadyImportedModules[item[0]]) {
+				if (mediaQuery && !item[2]) {
+					item[2] = mediaQuery;
+				} else if (mediaQuery) {
+					item[2] = "(" + item[2] + ") and (" + mediaQuery + ")";
+				}
+				list.push(item);
+			}
+		}
+	};
+	return list;
+};
+
+function cssWithMappingToString(item, useSourceMap) {
+	var content = item[1] || '';
+	var cssMapping = item[3];
+	if (!cssMapping) {
+		return content;
+	}
+
+	if (useSourceMap && typeof btoa === 'function') {
+		var sourceMapping = toComment(cssMapping);
+		var sourceURLs = cssMapping.sources.map(function (source) {
+			return '/*# sourceURL=' + cssMapping.sourceRoot + source + ' */';
+		});
+
+		return [content].concat(sourceURLs).concat([sourceMapping]).join('\n');
+	}
+
+	return [content].join('\n');
+}
+
+// Adapted from convert-source-map (MIT)
+function toComment(sourceMap) {
+	// eslint-disable-next-line no-undef
+	var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));
+	var data = 'sourceMappingURL=data:application/json;charset=utf-8;base64,' + base64;
+
+	return '/*# ' + data + ' */';
+}
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports) {
+
+
+/**
+ * When source maps are enabled, `style-loader` uses a link element with a data-uri to
+ * embed the css on the page. This breaks all relative urls because now they are relative to a
+ * bundle instead of the current page.
+ *
+ * One solution is to only use full urls, but that may be impossible.
+ *
+ * Instead, this function "fixes" the relative urls to be absolute according to the current page location.
+ *
+ * A rudimentary test suite is located at `test/fixUrls.js` and can be run via the `npm test` command.
+ *
+ */
+
+module.exports = function (css) {
+	// get current location
+	var location = typeof window !== "undefined" && window.location;
+
+	if (!location) {
+		throw new Error("fixUrls requires window.location");
+	}
+
+	// blank or null?
+	if (!css || typeof css !== "string") {
+		return css;
+	}
+
+	var baseUrl = location.protocol + "//" + location.host;
+	var currentDir = baseUrl + location.pathname.replace(/\/[^\/]*$/, "/");
+
+	// convert each url(...)
+	/*
+ This regular expression is just a way to recursively match brackets within
+ a string.
+ 	 /url\s*\(  = Match on the word "url" with any whitespace after it and then a parens
+    (  = Start a capturing group
+      (?:  = Start a non-capturing group
+          [^)(]  = Match anything that isn't a parentheses
+          |  = OR
+          \(  = Match a start parentheses
+              (?:  = Start another non-capturing groups
+                  [^)(]+  = Match anything that isn't a parentheses
+                  |  = OR
+                  \(  = Match a start parentheses
+                      [^)(]*  = Match anything that isn't a parentheses
+                  \)  = Match a end parentheses
+              )  = End Group
+              *\) = Match anything and then a close parens
+          )  = Close non-capturing group
+          *  = Match anything
+       )  = Close capturing group
+  \)  = Match a close parens
+ 	 /gi  = Get all matches, not the first.  Be case insensitive.
+  */
+	var fixedCss = css.replace(/url\s*\(((?:[^)(]|\((?:[^)(]+|\([^)(]*\))*\))*)\)/gi, function (fullMatch, origUrl) {
+		// strip quotes (if they exist)
+		var unquotedOrigUrl = origUrl.trim().replace(/^"(.*)"$/, function (o, $1) {
+			return $1;
+		}).replace(/^'(.*)'$/, function (o, $1) {
+			return $1;
+		});
+
+		// already a full url? no change
+		if (/^(#|data:|http:\/\/|https:\/\/|file:\/\/\/)/i.test(unquotedOrigUrl)) {
+			return fullMatch;
+		}
+
+		// convert the url to a full url
+		var newUrl;
+
+		if (unquotedOrigUrl.indexOf("//") === 0) {
+			//TODO: should we add protocol?
+			newUrl = unquotedOrigUrl;
+		} else if (unquotedOrigUrl.indexOf("/") === 0) {
+			// path should be relative to the base url
+			newUrl = baseUrl + unquotedOrigUrl; // already starts with '/'
+		} else {
+			// path should be relative to current directory
+			newUrl = currentDir + unquotedOrigUrl.replace(/^\.\//, ""); // Strip leading './'
+		}
+
+		// send back the fixed url(...)
+		return "url(" + JSON.stringify(newUrl) + ")";
+	});
+
+	// send back the fixed css
+	return fixedCss;
+};
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(0);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// Prepare cssTransformation
+var transform;
+
+var options = {}
+options.transform = transform
+// add the styles to the DOM
+var update = __webpack_require__(1)(content, options);
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/less-loader/dist/cjs.js!./index.less", function() {
+			var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/less-loader/dist/cjs.js!./index.less");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ })
+/******/ ]);
