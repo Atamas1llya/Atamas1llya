@@ -2,7 +2,7 @@ var path = require('path');
 
 module.exports = {
 
-  entry: "./less/index.less",
+  entry: "./js/script.js",
   output: {
       path: path.join(__dirname, 'dist'),
       filename: "bundle.js"
